@@ -1,0 +1,162 @@
+/* CharacterSearch.css */
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.title-image{
+  max-width: 20rem;
+  margin-bottom: 2rem;
+}
+
+.input-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 5px;
+  position: relative;
+}
+
+.search-input {
+  flex: 1;
+  padding: 5px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+.tag {
+  display: flex;
+  align-items: center;
+  background-color: #e0e0e0;
+  border-radius: 4px;
+  padding: 5px;
+  margin: 2px;
+}
+
+.tag img {
+  margin-right: 5px;
+  border-radius: 50%;
+}
+
+.tag button {
+  background: none;
+  border: none;
+  margin-left: 5px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.add-button {
+  width: 100%;
+  display: block;
+  margin-top: 10px;
+  padding: 10px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.add-button:hover {
+  background-color: #0056b3;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  max-height: 20rem;
+  overflow-y: auto;
+  margin-top: 5px;
+}
+
+li {
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+li img {
+  margin-right: 10px;
+  border-radius: 4px;
+}
+
+li:hover {
+  background-color: #f0f0f0;
+}
+
+li.selected {
+  background-color: #ddd;
+}
+
+.result-content{
+  display: flex;
+  flex-direction: column !important;
+  align-items: flex-start;
+gap: 4px;
+}
+
+.loading, .error {
+  text-align: center;
+  padding: 10px;
+}
+
+.selected-characters {
+  margin-top: 20px;
+}
+
+.selected-characters ul {
+  padding: 4px;
+}
+
+.selected-characters li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+  margin-bottom: 5px;
+}
+
+.character-info {
+  display: flex;
+  align-items: center;
+}
+
+.character-info img {
+  margin-right: 10px;
+}
+
+.character-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 4px;
+}
+
+.character-details span {
+  font-size: 12px;
+  color: #555;
+}
+
+.remove-button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: red;
+  font-weight: bold;
+}
